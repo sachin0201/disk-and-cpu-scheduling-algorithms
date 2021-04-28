@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISK Scheduling</title>
+    <link rel="stylesheet" href="index19.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+</head>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-grey w3-left-align w3-large">
+            <a href="main.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black" style="width:15%;font-size: 20px;"><b>Home</b></a>
+            <a href="home18.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>CPU Scheduling</b></a>
+            <a href="index19.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>Disk Scheduling</b></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:25%;font-size: 20px;"><b>Page Replacement</b></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>Deadlock</b></a>
+          </div>
+      </div>
+      <br><br>
+
+      <div><img src="disk_home.png" width="100%" alt="CPU SCHEDULING"></div>
+
+    <div class="hero-bg">
+        <section class="top">
+            <h2><b>What is Disk Scheduling ?</b></h2>
+            <ul>
+                <li>The CPU divides its processing time and divides it in such a manner that no system application face any hindrance. Through disk scheduling, it specifies which task CPU needs to handle first and during which time. Simply put it can be said that the total time of CPU is bifurcated among the various functions and programmes so that each process can process simultaneously at one point in time.                Disk scheduling is scheduling the CPUs time for optimum utilization of the computer.</li>
+                <li>A computer is used to perform many tasks at the same time. While working on computers, we mostly work on multiple programmes and software at the same time, without any hindrance. To control all the functions, including the disk memory, and to process the operating systems efficiently, the computer uses the model of disk scheduling.</li> 
+                <li>So before we take a deep dive into how this scheduling model is implemented , we should get familier with which disks are we talking about and <b>WHY</b> does the computer needs to apply these disk scheduling models.</li> 
+                </p>
+            <header>
+                <h2><b>What are Magnetic Disks ?</b></h2>
+                    <ul>
+                        <li>IBM introduced the first magnetic disk, the RAMAC, in 1955; it held 5 megabytes. Magnetic disks are platters coated with iron oxide, like tape and drums.</li>
+                        <li>An arm with a tiny wire coil, the read and a write head in each and evry disk which moves radially over the disk, which is divided into concentric tracks composed of small arcs, or sectors, of data.</li>
+                        <li>Magnetized regions of the disk generate small currents in the coil as it passes, thereby allowing it to “read” a sector; similarly, a small current in the coil will induce a local magnetic change in the disk, thereby “writing” to a sector.</li>
+                        <li>There is a read and write head of each and every disk, and this moves in rectilinear motion across the surface of the track. Block numbers are used to request data from the drive, and it is the controller who takes the head to the required track and to have access to the data it then waits till the required block comes under it.</li>
+                        <li>This disk in a computer is a magnetic storing drive which is divided into different surfaces. All these surfaces or platters rotate as one unit, and the speed at which it rotates is as high as 5k to 10k RPM.</li>
+                        <li>Magnetic storage or magnetic recording is the storage of data on a magnetized medium. Magnetic storage uses different patterns of magnetisation in a magnetizable material to store data and is a form of non-volatile memory. The information is accessed using one or more read/write heads.</li>
+                        <li>So when various requests come from a request or at the same time, and this is where the <b>Role of Disk Scheduling</b> comes into the picture.</li>    
+                    </ul>
+                </header>    
+            
+        </section>
+        <section class="bottom">
+            <header>
+                <h2><b>What is the need of Disk Scheduling ?</b></h2>
+                    <ul>
+                        <li>One of the responsibilities of the operating system is to use the hardware efficiently. For the disk drives, meeting this responsibility entails having fast access time and large disk bandwidth.</li>
+                        <li>For magnetic disks, the access time has two major components.The seek time is the time for the disk arm to move the heads to the cylinder containing the desired sector.</li>
+                        <li>The rotational latency is the additional time for the disk to rotate the desired sector to the disk head. The disk bandwidth is the total number of bytes transferred, divided by the total time between the first request for service and the completion of the last transfer.</li>
+                        <li>We can improve both the access time and the bandwidth by managing the order in which disk I/O requests are serviced.</li>    
+                    </ul>
+            </header>
+            
+        </section>
+        <section>
+            <h2><b>Types of Disk Scheduling Algorithms</b></h2>
+            <ul>
+                <li>The CPU divides its processing time and divides it in such a manner that no system application face any hindrance. Through disk scheduling, it specifies which task CPU needs to handle first and during which time. Simply put it can be said that the total time of CPU is bifurcated among the various functions and programmes so that each process can process simultaneously at one point in time.
+                Disk scheduling is scheduling the CPUs time for optimum utilization of the computer.So this is implemented using various algorithms which include:
+            </ul>
+            <b>
+                <li><a href="fcfs19.html">First Come First Serve Disk Scheduling (FCFS)</a></li>
+                <li><a href="sstf19.html">Shortest Seek Time First Disk Scheduling (SSTF)</a></li>
+                <li><a href="scan19.html">Scan Disk Scheduling</a></li>
+                <li><a href="look19.html">Look Disk Scheduling</a></li>
+                <li><a href="cscan19.html">Circular Scan Disk Scheduling</a></li>
+                <li><a href="clook19.html">Circular Look Disk Scheduling</a></li>
+            </b>
+        </section>
+
+        <div class="types">
+        <div class="algo-bg">
+            <p class="msg">Lets try to Run and Understand how these <b>Disk Scheduling Algorithms</b> actually <b>WORK</b> and even make a <b>COMPARITIVE ANALYSIS</b>.</p>
+            <a href="apply19.html"><input type="button" class="disk" value="Start Lab" id="start-btn"></a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

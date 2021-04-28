@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Montserrat:wght@300;400&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-color:  rgb(17, 237, 245, 0.192);
+}
+
+.hero-bg{
+    padding: 0.2em;
+    cursor: default;
+}
+
+h1{
+    padding: 0.2em;
+    font-family: 'Libre Baskerville', serif;
+    position: relative;
+    text-align: center;
+    font-size: 4rem;
+    color: red;
+    animation: 2s Fade forwards;    
+}
+
+h1 span::before{
+    content: ' ';
+    position: absolute ;
+    width: 40%;
+    height: 1rem;
+    background-color: aquamarine;
+    bottom: 1.8rem;
+    margin-left: -1em;
+    margin-bottom: -0.1em;
+    z-index: -1;
+}
+
+p{
+    margin-bottom: 4rem;
+    cursor: default;
+}
+
+.img-bg{
+    margin: 0 10em;
+    padding: 0.5rem;
+    text-align: center;
+    border: 1rem greenyellow;
+    border-style:solid;
+    border-radius: 0.5rem;
+    border-bottom-width:2rem ;
+    border-bottom-left-radius:1rem ;
+    border-bottom-right-radius: 1rem;
+}
+
+@keyframes Fade{
+    from{
+        opacity: 0;
+        transform:translateY(-2em) ;
+    }
+    to{
+        opacity: 1;
+        transform:translateY(0em) ;
+    }
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href="algo19.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-grey w3-left-align w3-large">
+            <a href="main.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black" style="width:15%;font-size: 20px;"><b>Home</b></a>
+            <a href="home18.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>CPU Scheduling</b></a>
+            <a href="index19.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>Disk Scheduling</b></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:25%;font-size: 20px;"><b>Page Replacement</b></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>Deadlock</b></a>
+          </div>
+      </div>
+      <br><br>
+    <div class="hero-bg">
+        <h1>
+            <b>Shortest Seek Time First Disk Scheduling (SSTF)</b>
+        </h1>
+        <p>
+            In this case request is serviced according to next shortest distance. Starting at 50, the next shortest distance would be 62 instead of 34 since it is only 12 tracks away from 62 and 16 tracks away from 34. The process would continue until all the process are taken care of. For example the next case would be to move from 62 to 64 instead of 34 since there are only 2 tracks between them and not 18 if it were to go the other way. Although this seems to be a better service being that it moved a total of 236 tracks, this is not an optimal one. There is a great chance that starvation would take place. The reason for this is if there were a lot of requests close to eachother the other requests will never be handled since the distance will always be greater.
+        </p>
+        <strong>Advantages</strong>
+        <li>Average Response Time decreases.</li>
+        <li>It reduces the total seek time as compared to FCFS.</li>
+        <li>It provides increased throughput.</li>
+        <li>It provides less average response time and waiting time.</li>
+        <br>
+        <strong>Disadvantages</strong>
+        <li>There is an overhead of finding out the closest request.</li>
+        <li>It provides high variance in response time and waiting time.</li>
+        <li>The requests which are far from the head might starve for the CPU.</li>
+        <li>Switching the direction of head frequently slows down the algorithm.</li>
+        <p><b>EXAMPLE : </b>Lets say we are given with the following queue ==> 95, 180, 34, 119, 11, 123, 62, 64 with the Read-write head initially at the track 50 and the tail track being at 199 let us now discuss the different algorithms.</p>
+        <div class="img-bg">
+        <img src="sstf19.bmp" alt="SSTF image">
+        </div>
+        <br>
+        
+    </div>
+    <div class="types">
+        <div class="algo-bg">
+            <p class="msg"><br>Lets try to Run and Understand how these <b>Disk Scheduling Algorithms</b> actually <b>WORK</b> and even make a <b>COMPARITIVE ANALYSIS</b>.</p>
+            <a href="apply19.html"><input type="button" class="disk" value="Start Lab" id="start-btn"></a>
+        </div>
+</body>
+</html>

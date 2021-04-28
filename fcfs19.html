@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href="algo19.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-grey w3-left-align w3-large">
+            <a href="main.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black" style="width:15%;font-size: 20px;"><b>Home</b></a>
+            <a href="home18.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>CPU Scheduling</b></a>
+            <a href="index19.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>Disk Scheduling</b></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:25%;font-size: 20px;"><b>Page Replacement</b></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>Deadlock</b></a>
+          </div>
+      </div>
+      <br><br>
+    <div class="hero-bg">
+        <h1>
+          <b>  First Come First Serve Disk Scheduling ( FCFS )</b>
+        </h1>
+        <p>All incoming requests are placed at the end of the queue. Whatever number that is next in the queue will be the next number served. Using this algorithm doesn't provide the best results. To determine the number of head movements you would simply find the number of tracks it took to move from one request to the next. For this case it went from 50 to 95 to 180 and so on. From 50 to 95 it moved 45 tracks. If you tally up the total number of tracks you will find how many tracks it had to go through before finishing the entire request. In this example, it had a total head movement of 640 tracks. The disadvantage of this algorithm is noted by the oscillation from track 50 to track 180 and then back to track 11 to 123 then to 64. As you will soon see, this is the worse algorithm that one can use.</p>
+        <strong>Advantages</strong>
+        <li>Every request gets a fair chance.</li>
+        <li>It is simple, easy to understand and implement.</li>
+        <li>It does not cause starvation to any request.</li>
+        <li>No indefinite postponement.</li>
+        <br>
+        <strong>Disadvantages</strong>
+        <li>Does not try to optimize seek time.</li>
+        <li>It results in increased total seek time.</li>
+        <li>May not provide the best possible service.</li>
+        <li>It is inefficient.</li>
+        <p><b>EXAMPLE : </b>Lets say we are given with the following queue ==> 95, 180, 34, 119, 11, 123, 62, 64 with the Read-write head initially at the track 50 and the tail track being at 199 let us now discuss the different algorithms.</p>
+        <div class="img-bg">
+        <img src="fcfs19.bmp" alt="FCFS image">
+        </div>
+        <br>
+        
+    </div>
+    <div class="types">
+        <div class="algo-bg">
+            <p class="msg"><br>Lets try to Run and Understand how these <b>Disk Scheduling Algorithms</b> actually <b>WORK</b> and even make a <b>COMPARITIVE ANALYSIS</b>.</p>
+            <a href="apply19.html"><input type="button" class="disk" value="Start Lab" id="start-btn"></a>
+        </div>
+        </div>
+</body>
+</html>

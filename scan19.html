@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href="algo19.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-grey w3-left-align w3-large">
+            <a href="main.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black" style="width:15%;font-size: 20px;"><b>Home</b></a>
+            <a href="home18.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>CPU Scheduling</b></a>
+            <a href="index19.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>Disk Scheduling</b></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:25%;font-size: 20px;"><b>Page Replacement</b></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>Deadlock</b></a>
+          </div>
+      </div>
+      <br><br>
+    <div class="hero-bg">
+        <h1>
+            <b>SCAN Disk Scheduling</b>
+        </h1>
+        <p>
+            This approach works like an elevator does. It scans down towards the nearest end and then when it hits the bottom it scans up servicing the requests that it didn't get going down. If a request comes in after it has been scanned it will not be serviced until the process comes back down or moves back up. This process moved a total of 230 tracks. Once again this is more optimal than the previous algorithm, but it is not the best.
+        </p>
+        <strong>Advantages</strong>
+        <li>High throughput.</li>
+        <li>It is simple, easy to understand and implement.</li>
+        <li>It provides low variance in response time and waiting time.</li>
+        <li>It does not lead to starvation.</li>
+        <li>Average response time.</li>
+        <br>
+        <strong>Disadvantages</strong>
+        <li>It causes the head to move till the end of the disk even if there are no requests to be serviced.</li>
+        <li>Long waiting time for requests for locations just visited by disk arm.</li>
+        <li>It causes long waiting time for the cylinders just visited by the head.</li>
+        <p><b>EXAMPLE : </b>Lets say we are given with the following queue ==> 95, 180, 34, 119, 11, 123, 62, 64 with the Read-write head initially at the track 50 and the tail track being at 199 let us now discuss the different algorithms.</p>
+        <div class="img-bg">
+        <img src="scan19.bmp" alt="SCAN image">
+        </div>
+        <br>
+        
+    </div>
+    <div class="types">
+        <div class="algo-bg">
+            <p class="msg"><br>Lets try to Run and Understand how these <b>Disk Scheduling Algorithms</b> actually <b>WORK</b> and even make a <b>COMPARITIVE ANALYSIS</b>.</p>
+            <a href="apply19.html"><input type="button" class="disk" value="Start Lab" id="start-btn"></a>
+        </div>
+</body>
+</html>

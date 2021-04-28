@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Montserrat:wght@300;400&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: burlywood;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-areas: "button heading";
+    background-image: url(background_main.jpg);
+    background-size: 100%;
+}
+
+h1{
+    padding: 0.2em;
+    font-family: 'Libre Baskerville', serif;
+    position: relative;
+    font-size: 4rem;
+    color: orange;
+    cursor: default;  
+    text-align: right;  
+}
+
+/* span::before{
+    content: ' ';
+    position: absolute ;
+    width: 1rem;
+    height: 7em;
+    background-color: rgb(19, 159, 184);
+    bottom: 1.8rem;
+    margin-left: -1em;
+    margin-bottom: -0.1em;
+    z-index: -1;
+} */
+
+input[type=button]{
+    background-color: rgba(17, 237, 245, 0.192);
+    color: blanchedalmond;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5em;
+    padding: 1rem 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 50%;    
+    height: 70px;
+    margin: 1rem;
+}
+
+
+input[type=button]:hover{
+    background-color: rgba(10, 41, 77, 0.404);
+    color: rgb(255, 167, 35);
+}
+
+.hero-bg{
+    grid-area: heading;
+    text-align: right;
+    padding-right: 2rem;
+    padding-top: 30%;
+    animation: bounce 6s;
+    animation-timing-function: ease;
+}
+
+.btn-bg{
+    z-index: 1;
+    grid-area: button;
+    text-align: center;
+    padding-left: 2rem;
+    padding-top: 20%;
+    
+}
+
+.btn-abo_us{
+    position: fixed;
+    top: 500px;
+    left:930px;
+    width: 550px;
+}
+
+.btn-bg cpu{
+    animation: bounce 2s;
+    animation-timing-function: ease;
+}
+
+.btn-bg disk{
+    animation: bounce 2s;
+    animation-timing-function: ease;
+}
+
+
+@keyframes bounce{
+    0% {opacity:0 ; transform:translateY(-7.5em) ;}
+    25% {opacity:1 ; transform:translateY(0em) ;}
+    50% {transform:translateY(-5em) ;}
+    100% {transform:translateY(0em) ;}
+}
+

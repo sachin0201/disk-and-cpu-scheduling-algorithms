@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Montserrat:wght@300;400&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: burlywood;
+    background-color:  rgba(17, 237, 245, 0.192);
+    color: black;
+}
+
+.hero-bg{
+    padding: 0.2em;
+    cursor: default;
+}
+
+h1{
+    padding: 0.2em;
+    font-family: 'Libre Baskerville', serif;
+    position: relative;
+    text-align: center;
+    font-size: 4rem;
+    color: red;
+    animation: 2s Fade forwards;
+    
+}
+
+h1 span::before{
+    content: ' ';
+    position: absolute ;
+    width: 40%;
+    height: 1rem;
+    background-color: aquamarine;
+    bottom: 1.8rem;
+    margin-left: -1em;
+    margin-bottom: -0.1em;
+    z-index: -1;
+}
+
+p{
+    margin-bottom: 4rem;
+    cursor: default;
+}
+
+.img-bg{
+    margin: 0 10em;
+    padding: 0.5rem;
+    text-align: center;
+    border: 1rem greenyellow;
+    border-style:solid;
+    border-radius: 0.5rem;
+    border-bottom-width:2rem ;
+    border-bottom-left-radius:1rem ;
+    border-bottom-right-radius: 1rem;
+}
+
+@keyframes Fade{
+    from{
+        opacity: 0;
+        transform:translateY(-2em) ;
+    }
+    to{
+        opacity: 1;
+        transform:translateY(0em) ;
+    }
+}
+
+.types{
+    background-color:rgb(108, 232, 236);
+}
+
+.algo-bg {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    justify-content: center;
+    align-content: center;
+}
+
+input[type=button]:hover{
+    background-color: rgb(3, 78, 78);
+    color: rgb(190, 255, 61);
+}
+
+input[type=button]{
+    color: rgb(13, 110, 13);
+    background-color: rgba(40, 93, 238, 0.199);
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5em;
+    padding: 1rem 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 50%;    
+    height: 70px;
+    margin-left: 30%;
+    margin-top: 5%;
+}

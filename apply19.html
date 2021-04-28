@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply.DiskScheduling();</title>
+    <link rel="stylesheet" href="apply19.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-grey w3-left-align w3-large">
+            <a href="main.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black" style="width:15%;font-size: 20px;"><b>Home</b></a>
+            <a href="home18.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>CPU Scheduling</b></a>
+            <a href="index19.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>Disk Scheduling</b></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:25%;font-size: 20px;"><b>Page Replacement</b></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>Deadlock</b></a>
+          </div>
+      </div>
+      <br><br>
+
+      <div><img src="disk_lab.png" width="100%" alt="CPU SCHEDULING"></div>
+
+    
+    <div class="ctrl-bg">
+        <section class="btns">
+            <input type="button" class="button button1" id='fcfs' value="FCFS">
+            <input type="button" class="button button2" id='sstf' value="SSTF">
+            <input type="button" class="button button3" id='scan' value="SCAN">
+            <input type="button" class="button button4" id='look' value="LOOK">
+            <input type="button" class="button button5" id='cscan' value="C-SCAN">
+            <input type="button" class="button button6" id='clook' value="C-LOOK">
+            <button class="direc">
+            <span id='direction'>LEFT-to-RIGHT</span>
+            </button>
+        </section>
+        <section id="user-ip">
+            <input type="button" class="direc" id="reset-range" value="RESET INPUT DATASET">
+            <form action=""></form>
+                <label> Set Max track:</label>
+                <input type="range" id="maxts" value="50" min="20" max="200" step="10" oninput="maxtrks.value=parseInt(maxts.value)">
+                <output id="maxtrks" for="maxts">50</output>
+                
+                <br>
+                Enter START track:
+                <label for="value" id="data"></label>
+                <input type="text" placeholder="Enter the start track" id="start"> 
+                <input type="button" class="direc" id="addStart" value="ADD">
+                <br>
+                Enter the tracks:
+                <label for="value" id="data"></label>
+                <input type="text" placeholder="Enter the Track Value" id="input-q"> 
+                <input type="button" class="direc" id="add" value="ADD">
+                <input type="button" class="direc" id="delete" value="DELETE">
+            </form>
+        </section>
+        <section id="output-q" class="op-q"> The Order of Request is: NULL</section>
+        <section class="canvas">
+            <canvas id='chart' width="900" height="400"></canvas>
+        </section>
+        <section id="algo-info"><br><br>
+            <b>The selected Scheduling is : </b><p id="algo-type">None</p>
+            <!-- <b>Max Track Size is :</b><p id=maxtrk>-</p> -->
+            <b>The Start track is : </b><p id="strt-no">-</p>
+            <b>The seek Queue is : </b><p id="output-q2">Empty</p>
+
+        </section>
+    </div>
+    <div class="print-bt">
+        <input type="button" class="direc" id="clear" value="Clear canvas">
+        <input type="button" class="direc" id='print' value="Save the Output" onclick="window.print()">
+    </div>
+    <canvas id="trkchart" ></canvas>
+    <script src="apply19.js"></script>
+</body>
+</html>

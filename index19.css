@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Montserrat:wght@300;400&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(17, 237, 245, 0.192);
+    color: black;
+}
+
+h1{
+    padding: 0.2em;
+    font-family: 'Libre Baskerville', serif;
+    position: relative;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    
+}
+
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    padding: 0.1em;
+    position: relative;
+    color: red;
+    cursor: default;
+    font-style:italic;
+
+}
+
+h1 span::before{
+    content: ' ';
+    position: absolute ;
+    width: 7em;
+    height: 1rem;
+    background-color: aquamarine;
+    bottom: 1.8rem;
+    margin-left: -1em;
+    margin-bottom: -0.1em;
+    z-index: -1;
+
+}
+
+h2 span::before{
+    content: ' ';
+    position: absolute ;
+    width: 7em;
+    height: 0.8rem;
+    background-color: aquamarine;
+    margin-bottom: -0.1em;
+    z-index: -1;
+    bottom: 0.8rem;
+}
+
+.hero-bg ul{
+    padding: 0.5rem;
+}
+
+.hero-bg li{
+    padding: 0.5rem;
+}
+
+
+.hero-bg{
+    animation: Fade 2s forwards ;
+}
+
+.hero-img{
+    width: 100%;
+}
+
+/* .disk-img{
+    background: #000000 url('Disk.jpg');
+    background-position: right;
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+} */
+
+input[type=button]{
+    color: rgb(13, 110, 13);
+    background-color: rgba(40, 93, 238, 0.199);
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5em;
+    padding: 1rem 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 50%;    
+    height: 70px;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+input[type=button]:hover{
+    background-color: rgb(3, 78, 78);
+    color: rgb(190, 255, 61);
+}
+
+.algo-bg {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    justify-content: center;
+    align-content: center;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    cursor: pointer;
+    color: tomato;
+}
+
+.msg{
+    font-size: 1.2rem;
+    color: rgb(13, 110, 13);
+    cursor: default;
+}
+
+@keyframes Fade{
+    from{
+        opacity: 0;
+        transform:translateY(-2em) ;
+    }
+    to{
+        opacity: 1;
+        transform:translateY(0em) ;
+    }
+}
+
+.types{
+    background-color:rgb(108, 232, 236);
+}

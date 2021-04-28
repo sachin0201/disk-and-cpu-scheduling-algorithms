@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU Scheduling</title>
+    <link rel="stylesheet" href="index18.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+    <div class="w3-top">
+        <div class="w3-bar w3-grey w3-left-align w3-large">
+            <a href="main.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black" style="width:15%;font-size: 20px;"><b>Home</b></a>
+            <a href="home18.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>CPU Scheduling</b></a>
+            <a href="index19.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>Disk Scheduling</b></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:25%;font-size: 20px;"><b>Page Replacement</b></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" style="width:20%;font-size: 20px;"><b>Deadlock</b></a>
+          </div>
+      </div>
+      <br><br>
+      
+      <div><img src="cpu_home.png" width="100%" alt="CPU SCHEDULING"></div>
+   
+    <div class="hero-bg">
+        <section class="top">
+            <h2><b>What is CPU Scheduling ?</b></h2>
+            <ul><li>CPU Scheduling is a process of determining which process will own CPU for execution while another process is on hold. The main task of CPU scheduling is to make sure that whenever the CPU remains idle, the OS at least select one of the processes available in the ready queue for execution. The selection process will be carried out by the CPU scheduler. It selects one of the processes in memory that are ready for execution.</li></ul>
+            </p>
+                <br>
+        </section>
+        <section class="bottom">
+            <header>
+                <h2><b>Important Terminologies</b></h2>
+                    <ul>
+                        <li><b>Burst Time/Execution Time:</b> It is a time required by the process to complete execution. It is also called running time.</li>
+                        <li><b>Arrival Time:</b>when a process enters in a ready state</li>
+                        <li><b>Finish Time:</b>when process complete and exit from a system</li>
+                        <li><b>Multiprogramming:</b>A number of programs which can be present in memory at the same time.</li>
+                        <li><b>Jobs:</b> It is a type of program without any kind of user interaction.</li> 
+                        <li><b>User:</b>It is a kind of program having user interaction.</li>  
+                        <li><b>Process:</b>It is the reference that is used for both job and user.</li>   
+                        <li><b>CPU/IO burst cycle</b>Characterizes process execution, which alternates between CPU and I/O activity. CPU times are usually shorter than the time of I/O.</li>   
+
+                    </ul>
+            </header>
+            <br>
+        </section>
+        
+        <section >
+            <h2><b>Types of CPU Scheduling Algorithms</b></h2>
+                <b>
+                <li><a href="fcfs18.html">First Come First Serve(FCFS)</a></li>
+                <li><a href="sjf18.html">Shortest Job First (SJF)</a></li>
+                <li><a href="ljf18.html">Longest Job First (LJF)</a></li>
+                <li><a href="srtf18.html">Shortest Remaining Time First (SRTF)</a></li>
+                <li><a href="lrjf18.html">Longest Remaining Time First (LRTF)</a></li>
+                <li><a href="rr18.html">Round Robin</a></li>
+                <li><a href="pnp18.html">Priority (Non Preemptive)</a></li>
+                <li><a href="pp18.html">Priority (Preemptive)</a></li>
+                <li><a href="hrrn18.html">Highest Response Ratio Next (HRRN)</a></li>
+            </b>
+        </section>
+
+        <div class="types">
+        <div class="algo-bg">
+            <p class="msg">Lets try to Run and Understand how these <b>CPU Scheduling Algorithms</b> actually <b>WORK</b> and even make a <b>COMPARITIVE ANALYSIS</b>.</p>
+            <a href="index18.html"><input type="button" class="cpu" value="Start Lab" id="start-btn"></a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

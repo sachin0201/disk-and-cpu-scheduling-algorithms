@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Montserrat:wght@300;400&display=swap');
+ 
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(17, 237, 245, 0.192);
+    color: black;
+}
+
+h1{
+    padding: 0.2em;
+    font-family: 'Libre Baskerville', serif;
+    position: relative;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    
+}
+
+input[type=button] {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: magenta; 
+    border: 2px solid magenta;
+    padding: 0px;
+  }
+  .button1:hover {
+    background-color: magenta;
+    color: white;
+  }
+  .button2 {
+    background-color: white; 
+    color: indigo; 
+    border: 2px solid indigo;
+    padding: 0px;
+  }
+  .button2:hover {
+    background-color: indigo;
+    color: white;
+  }
+  .button3 {
+    background-color: white; 
+    color: blue; 
+    border: 2px solid blue;
+    padding: 0px;
+  }
+  .button3:hover {
+    background-color: blue;
+    color: white;
+  }
+  .button4 {
+    background-color: white; 
+    color: brown; 
+    border: 2px solid brown;
+    padding: 0px;
+  }
+  .button4:hover {
+    background-color: brown;
+    color: white;
+  }
+  .button5 {
+    background-color: white; 
+    color: green; 
+    border: 2px solid green;
+    padding: 0px;
+  }
+  .button5:hover {
+    background-color: green;
+    color: white;
+  }
+  .button6 {
+    background-color: white; 
+    color: orange; 
+    border: 2px solid orange;
+    padding: 0px;
+  }
+  .button6:hover {
+    background-color: orange;
+    color: white;
+  }
+  
+.direc {
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 0px;
+}
+
+.direc:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.print-bt input[type=button] {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: larger;
+    position: relative;
+    left: 50%;
+}
+
+input[type=button]:hover{
+    cursor: pointer;  
+}
+
+
+.canvas {
+    margin: auto;
+    border: 3px solid;
+    width: 900px;
+    height: 400px;
+}
+
+.ctrl-bg {
+    margin: 10px;
+}
+
+.btns input[type=button] {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    text-align:center;
+}
+
+#maxts {
+    width: 200px;
+}
+
+#reset-range {
+    width: 200px;
+}
+
+.op-q {
+    margin: 10px;
+    border: 3px black;
+    border-style:solid;
+    padding: 10px;
+}
+strong {
+    font-size: 10px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+}
