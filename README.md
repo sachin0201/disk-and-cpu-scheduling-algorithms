@@ -75,5 +75,5 @@
 Electron JS is an open-source framework that allows developers to build cross-platform desktop apps with JavaScript, HTML, and CSS. It renders the HTML page to make the application.
 
 ### Website Link
-After coding this [ website - Link](sachin0201.github.io/disk-and-cpu-scheduling-algorithms/main.html) using Js, HTML and CSS was later converted into a GUI with the help of Electron JS.
+After coding this [ website - Link](https://sachin0201.github.io/disk-and-cpu-scheduling-algorithms/main.html) using Js, HTML and CSS was later converted into a GUI with the help of Electron JS.
 
