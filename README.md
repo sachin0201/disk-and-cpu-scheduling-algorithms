@@ -20,7 +20,7 @@
 - Requests at the midrange are serviced more and those arriving behind the disk arm will have to wait.
   - **SACN**
 - Disk arm instead of reversing its direction goes to the other end of the disk and starts servicing the requests from there.
-  - **Circular SCAN (C-SACN)**
+  - **Circular SCAN (C-SCAN)**
 - Disk arm in spite of going to the end of the disk goes only to the last request to be serviced in front of the head and then reverses its direction from there only.
   - **LOOK**
 - Disk arm in spite of going to the end goes only to the last request to be serviced in front of the head and then from there goes to the other end’s last request.
