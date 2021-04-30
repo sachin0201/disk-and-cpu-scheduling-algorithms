@@ -12,7 +12,7 @@
 - Comparison for Round Robin Algorithm for all time quantum.
 - Comparison between all the algorithms wrt Average Completion Time, Turn Around Time, Waiting Time and Response Time.
 
-### Different Disk Scheudling Algorithms
+### Different Disk Scheduling Algorithms
 - Requests are addressed in the order they arrive in the disk queue.
   - **First Come First Serve (FCFS)**
 - Requests having shortest seek time are executed first.
