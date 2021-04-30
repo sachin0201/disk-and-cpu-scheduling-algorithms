@@ -27,7 +27,7 @@
   - **Circular LOOK (C-LOOK)**
  
 
-### Different Criteria of CPU Scheudling Algorithms
+### Different Criteria of CPU Scheduling Algorithms
 - The first process arrived in the ready queue is processed first.
   - **First Come First Serve (FCFS)**
     >Non-Preemptive
